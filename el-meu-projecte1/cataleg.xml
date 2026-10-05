@@ -1,0 +1,20 @@
+<BOTIGA_ONLINE>
+    <Nom>   </Nom>
+    <llengua> </llengua>
+    <ubicacio_seu_botiga> </ubicacio_seu_botiga>
+    <slogan> </slogan>
+    <contacte> </contacte>
+        <telefon> </telefon>
+        <gmail> </gmail>
+        <xarxes_socials>
+            <Instagram> </Instagram>
+            <tik_tok> </tik_tok>
+        </xarxes_socials>
+    </contacte>
+    <metodes_de_pagament> </metodes_de_pagament>
+        <metode> Paypal </metode>
+        <metode> Bizum </metode>
+        <metode> Transeferència bancària </metode>
+        <metode> Apple pay </metode>
+        <metode> Google pay </metode>
+</BOTIGA_ONLINE>
