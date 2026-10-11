@@ -1,35 +1,43 @@
-JUSTIFICACIÓ DE L'ESTRUCTURA DEL CATÀLEG XML DE BITLAB
+JUSTIFICACIÓ DE L'ESTRUCTURA DEL CATÀLEG XML DE BITLAB (BOTIGA EN LÍNIA)
 
-El catàleg té un únic element arrel, <botiga>, que conté la informació de BitLab
-i els productes. Les dades generals s'agrupen a <dades_botiga>, el contacte i
-les xarxes a <contacte>, les opcions de pagament a <metodes_pagament> i els
-articles a <cataleg>. Aquesta jerarquia separa la informació per funció i en
-facilita la lectura i l'ampliació.
+El document té un únic element arrel, <botiga>, que agrupa la informació de
+BitLab. La secció <dades_botiga> recull el nom, la llengua, la ubicació, el
+lema, la moneda i la data d'actualització. Les seccions <contacte> i
+<metodes_pagament> descriuen com contactar amb la botiga i quines formes de
+pagament accepta. Finalment, <cataleg> conté els productes. Aquesta jerarquia,
+explicada també amb comentaris breus al document XML, separa la informació per
+funció i en facilita la lectura i l'ampliació.
 
-Les dades del catàleg —nom, moneda, preu, estoc, dates i descripcions— són
-elements perquè tenen contingut propi. Cada <producte> agrupa els seus camps.
-El codi és l'atribut @codi, ja que identifica de manera única cada fitxa en lloc
-de descriure'n el contingut. L'atribut @nom de <especificacio> assenyala el tipus
-de dada tècnica (per exemple, «Processador»); el seu valor és el contingut de
-l'element. L'atribut @escala de <valoracio> indica l'escala d'1 a 5.
+Cada <producte> agrupa les dades d'una fitxa. El codi es desa com a atribut
+@codi perquè identifica de manera única cada producte. Les dades amb contingut
+propi —com el nom, el preu, l'estoc, les dates i la descripció— es representen
+com a elements. L'atribut @nom de <especificacio> identifica el tipus de dada
+tècnica i el text de l'element n'indica el valor. L'atribut @escala de
+<valoracio> especifica que la valoració es puntua de l'1 al 5.
 
-Les categories i especificacions es poden repetir perquè un producte pot
-pertànyer a diversos grups i tenir moltes característiques: un portàtil pot ser
-«Portàtils» i «Gaming», i indicar processador, memòria, gràfica i garantia. Els
-valors es representen amb
-elements <categoria> i <especificacio> repetits dins dels seus grups
-<categories> i <especificacions>, en lloc d'aplegar-los en un sol text. Així
-l'estructura s'adapta a portàtils, ordinadors de sobretaula, components i
-perifèrics, i permetrà definir-ne la cardinalitat al DTD de RA4.
+Les categories i les especificacions s'agrupen en <categories> i
+<especificacions>, respectivament, i es poden repetir. Això permet descriure
+productes que pertanyen a més d'una categoria i tenen característiques
+diferents. L'estructura comuna s'adapta a portàtils, ordinadors de sobretaula,
+components i perifèrics, com monitors, teclats, ratolins, auriculars i càmeres
+web. També permetrà definir clarament la cardinalitat d'aquests elements al
+DTD de RA4.
 
-El catàleg conté dotze productes, més del mínim de deu. Els preus són en EUR,
-les valoracions van d'1 a 5, l'estoc és un enter igual o superior a zero i les
-dates segueixen DD/MM/AAAA. El producte esgotat es manté amb estoc zero. Les
-descripcions tenen una o dues frases. Al títol del pack de teclat i ratolí, «&»
-s'escriu amb l'entitat predefinida &amp; per respectar la sintaxi XML.
+El catàleg conté 17 productes, per sobre del mínim de deu. Els preus s'expressen
+en EUR, les valoracions utilitzen l'escala d'1 a 5, l'estoc és un nombre enter
+igual o superior a zero i les dates segueixen el format DD/MM/AAAA. El pack de
+teclat i ratolí es manté al catàleg amb estoc zero per indicar que temporalment
+no està disponible. Cada producte també inclou una descripció breu.
 
-XML és adequat perquè les etiquetes i la jerarquia fan les dades llegibles per
-persones i programes. L'estructura permet ampliar i processar el catàleg amb
-eines diferents. La codificació UTF-8 representa correctament els accents del
-català, i el comentari del fitxer explica la funció del codi identificador.
-L'estructura també servirà de base per validar el document amb un DTD.
+El document utilitza entitats predefinides per representar caràcters reservats
+o cometes quan apareixen al text: &amp; escriu el símbol «&» al nom del pack,
+&gt; i &lt; expressen comparacions entre resolucions, i &quot; delimita noms
+com «QHD», «USB-C» i «Bluetooth». Així es poden incloure aquests caràcters
+sense confondre'ls amb la sintaxi XML.
+
+XML és adequat per a aquest catàleg perquè les etiquetes i la jerarquia fan les
+dades llegibles per a persones i programes, i permeten ampliar-lo o processar-lo
+amb eines diferents. La declaració indica la codificació UTF-8, que representa
+correctament els accents del català. Els comentaris ajuden a entendre com
+s'organitza la botiga, i l'estructura serveix de base per validar el document
+amb un DTD.
