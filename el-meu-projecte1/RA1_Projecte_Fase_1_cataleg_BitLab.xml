@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Catàleg XML de BitLab. El codi identifica cada producte de manera única. -->
+<botiga>
+    <dades_botiga>
+        <nom>BitLab</nom>
+        <llengua>Català</llengua>
+        <ubicacio_seu>Botiga en línia amb seu a Barcelona, Catalunya</ubicacio_seu>
+        <slogan>Tecnologia al teu ritme</slogan>
+        <moneda>EUR</moneda>
+        <darrera_actualitzacio>11/10/2026</darrera_actualitzacio>
+    </dades_botiga>
+
+    <contacte>
+        <correu>suport@bitlab.example</correu>
+        <xarxes_socials>
+            <xarxa nom="Instagram">@bitlab.cat</xarxa>
+            <xarxa nom="TikTok">@bitlab.cat</xarxa>
+        </xarxes_socials>
+    </contacte>
+
+    <metodes_pagament>
+        <metode>PayPal</metode>
+        <metode>Bizum</metode>
+        <metode>Transferència bancària</metode>
+        <metode>Apple Pay</metode>
+        <metode>Google Pay</metode>
+    </metodes_pagament>
+
+    <!-- Cada producte té un codi únic com a atribut; categories i especificacions són repetibles. -->
+    <cataleg>
+        <producte codi="BIT-LAP-001">
+            <nom>BitLab Air 14</nom>
+            <categories>
+                <categoria>Portàtils</categoria>
+                <categoria>Oficina i estudi</categoria>
+            </categories>
+            <especificacions>
+                <especificacio nom="Marca">BitLab</especificacio>
+                <especificacio nom="Processador">Intel Core i5, 13a generació</especificacio>
+                <especificacio nom="Memòria RAM">16 GB</especificacio>
+                <especificacio nom="Emmagatzematge">SSD NVMe de 512 GB</especificacio>
+                <especificacio nom="Pantalla">14 polzades, Full HD</especificacio>
+                <especificacio nom="Pes">1,35 kg</especificacio>
+                <especificacio nom="Garantia">3 anys</especificacio>
+            </especificacions>
+            <preu>749.90</preu>
+            <valoracio escala="1-5">4.6</valoracio>
+            <estoc>18</estoc>
+            <data_incorporacio>15/02/2026</data_incorporacio>
+            <descripcio>Portàtil lleuger per treballar, estudiar i fer videotrucades. El SSD ràpid i els 16 GB de RAM permeten treballar amb diverses aplicacions alhora.</descripcio>
+        </producte>
+
+        <producte codi="BIT-LAP-002">
+            <nom>BitLab Forge 16</nom>
+            <categories>
+                <categoria>Portàtils</categoria>
+                <categoria>Gaming</categoria>
+            </categories>
+            <especificacions>
+                <especificacio nom="Marca">BitLab</especificacio>
+                <especificacio nom="Processador">AMD Ryzen 7, sèrie 8000</especificacio>
+                <especificacio nom="Memòria RAM">32 GB</especificacio>
+                <especificacio nom="Emmagatzematge">SSD NVMe d'1 TB</especificacio>
+                <especificacio nom="Gràfica">NVIDIA GeForce RTX 4060, 8 GB</especificacio>
+                <especificacio nom="Pantalla">16 polzades, 165 Hz</especificacio>
+                <especificacio nom="Garantia">3 anys</especificacio>
+            </especificacions>
+            <preu>1499.00</preu>
+            <valoracio escala="1-5">4.8</valoracio>
+            <estoc>7</estoc>
+            <data_incorporacio>03/03/2026</data_incorporacio>
+            <descripcio>Portàtil gaming amb gràfica dedicada i pantalla d'alta freqüència. També és adequat per editar vídeo i executar aplicacions creatives exigents.</descripcio>
+        </producte>
+
+        <producte codi="BIT-LAP-003">
+            <nom>BitLab Studio 16</nom>
+            <categories>
+                <categoria>Portàtils</categoria>
+                <categoria>Creació de contingut</categoria>
+            </categories>
+            <especificacions>
+                <especificacio nom="Marca">BitLab</especificacio>
+                <especificacio nom="Processador">Intel Core Ultra 7</especificacio>
+                <especificacio nom="Memòria RAM">32 GB</especificacio>
+                <especificacio nom="Emmagatzematge">SSD NVMe d'1 TB</especificacio>
+                <especificacio nom="Gràfica">NVIDIA GeForce RTX 4070, 8 GB</especificacio>
+                <especificacio nom="Pantalla">16 polzades, resolució 2.5K</especificacio>
+                <especificacio nom="Garantia">3 anys</especificacio>
+            </especificacions>
+            <preu>1899.00</preu>
+            <valoracio escala="1-5">4.7</valoracio>
+            <estoc>5</estoc>
+            <data_incorporacio>18/03/2026</data_incorporacio>
+            <descripcio>Estació de treball portàtil per a disseny, fotografia i edició de vídeo. La pantalla d'alta resolució ofereix espai i detall per treballar amb precisió.</descripcio>
+        </producte>
+
+        <producte codi="BIT-PC-004">
+            <nom>BitLab Tower Nova</nom>
+            <categories>
+                <categoria>PC de sobretaula</categoria>
+                <categoria>Gaming</categoria>
+            </categories>
+            <especificacions>
+                <especificacio nom="Marca">BitLab</especificacio>
+                <especificacio nom="Processador">AMD Ryzen 5, sèrie 7000</especificacio>
+                <especificacio nom="Memòria RAM">32 GB DDR5</especificacio>
+                <especificacio nom="Emmagatzematge">SSD NVMe d'1 TB</especificacio>
+                <especificacio nom="Gràfica">AMD Radeon RX 7700 XT, 12 GB</especificacio>
+                <especificacio nom="Placa base">Xipset B650, Wi-Fi 6</especificacio>
+                <especificacio nom="Font d'alimentació">750 W, 80 PLUS Gold</especificacio>
+            </especificacions>
+            <preu>1599.00</preu>
+            <valoracio escala="1-5">4.9</valoracio>
+            <estoc>6</estoc>
+            <data_incorporacio>22/03/2026</data_incorporacio>
+            <descripcio>Ordinador de sobretaula preparat per jugar amb fluïdesa i actualitzar components més endavant. La caixa facilita la ventilació i l'accés a l'interior.</descripcio>
+        </producte>
+
+        <producte codi="BIT-PC-005">
+            <nom>BitLab Office Mini</nom>
+            <categories>
+                <categoria>PC de sobretaula</categoria>
+                <categoria>Oficina</categoria>
+            </categories>
+            <especificacions>
+                <especificacio nom="Marca">BitLab</especificacio>
+                <especificacio nom="Processador">Intel Core i5, 14a generació</especificacio>
+                <especificacio nom="Memòria RAM">16 GB DDR5</especificacio>
+                <especificacio nom="Emmagatzematge">SSD NVMe de 512 GB</especificacio>
+                <especificacio nom="Gràfica">Integrada</especificacio>
+                <especificacio nom="Format">Mini torre</especificacio>
+                <especificacio nom="Connectivitat">Wi-Fi 6 i Bluetooth</especificacio>
+            </especificacions>
+            <preu>699.00</preu>
+            <valoracio escala="1-5">4.4</valoracio>
+            <estoc>12</estoc>
+            <data_incorporacio>02/04/2026</data_incorporacio>
+            <descripcio>PC compacte per a tasques d'oficina, navegació i gestió de documents. Ocupa poc espai i es pot ampliar quan les necessitats canviïn.</descripcio>
+        </producte>
+
+        <producte codi="BIT-CPU-006">
+            <nom>Processador Core i7 14700K</nom>
+            <categories>
+                <categoria>Components</categoria>
+                <categoria>Processadors</categoria>
+            </categories>
+            <especificacions>
+                <especificacio nom="Marca">Intel</especificacio>
+                <especificacio nom="Nuclis">20</especificacio>
+                <especificacio nom="Freqüència màxima">5,6 GHz</especificacio>
+                <especificacio nom="Socket">LGA1700</especificacio>
+                <especificacio nom="TDP">125 W</especificacio>
+                <especificacio nom="Garantia">3 anys</especificacio>
+            </especificacions>
+            <preu>429.90</preu>
+            <valoracio escala="1-5">4.7</valoracio>
+            <estoc>9</estoc>
+            <data_incorporacio>12/04/2026</data_incorporacio>
+            <descripcio>Processador d'alt rendiment per muntar un PC de joc o de creació de contingut. Cal comprovar la compatibilitat del socket i de la placa base abans de comprar-lo.</descripcio>
+        </producte>
+
+        <producte codi="BIT-GPU-007">
+            <nom>GeForce RTX 4070 Super 12 GB</nom>
+            <categories>
+                <categoria>Components</categoria>
+                <categoria>Targetes gràfiques</categoria>
+                <categoria>Gaming</categoria>
+            </categories>
+            <especificacions>
+                <especificacio nom="Marca">NVIDIA</especificacio>
+                <especificacio nom="Memòria gràfica">12 GB GDDR6X</especificacio>
+                <especificacio nom="Interfície">PCI Express 4.0</especificacio>
+                <especificacio nom="Sortides">HDMI i DisplayPort</especificacio>
+                <especificacio nom="Alimentació recomanada">750 W</especificacio>
+                <especificacio nom="Garantia">3 anys</especificacio>
+            </especificacions>
+            <preu>749.00</preu>
+            <valoracio escala="1-5">4.8</valoracio>
+            <estoc>4</estoc>
+            <data_incorporacio>20/04/2026</data_incorporacio>
+            <descripcio>Targeta gràfica per jugar amb detall elevat i accelerar tasques de creació. Abans del muntatge, cal verificar l'espai de la caixa i els connectors d'alimentació.</descripcio>
+        </producte>
+
+        <producte codi="BIT-MB-008">
+            <nom>Placa base B650 Wi-Fi</nom>
+            <categories>
+                <categoria>Components</categoria>
+                <categoria>Plaques base</categoria>
+            </categories>
+            <especificacions>
+                <especificacio nom="Marca">BitLab Components</especificacio>
+                <especificacio nom="Socket">AM5</especificacio>
+                <especificacio nom="Format">ATX</especificacio>
+                <especificacio nom="Memòria compatible">DDR5, quatre ranures</especificacio>
+                <especificacio nom="Emmagatzematge">Tres ranures M.2</especificacio>
+                <especificacio nom="Connectivitat">Wi-Fi 6E i Bluetooth 5.3</especificacio>
+            </especificacions>
+            <preu>219.90</preu>
+            <valoracio escala="1-5">4.5</valoracio>
+            <estoc>11</estoc>
+            <data_incorporacio>29/04/2026</data_incorporacio>
+            <descripcio>Placa base ATX per crear un sistema amb processador AMD compatible. Inclou connectivitat sense fils i opcions per ampliar memòria i emmagatzematge.</descripcio>
+        </producte>
+
+        <producte codi="BIT-RAM-009">
+            <nom>Memòria DDR5 32 GB</nom>
+            <categories>
+                <categoria>Components</categoria>
+                <categoria>Memòria RAM</categoria>
+            </categories>
+            <especificacions>
+                <especificacio nom="Marca">BitLab Components</especificacio>
+                <especificacio nom="Capacitat">32 GB, 2 x 16 GB</especificacio>
+                <especificacio nom="Tipus">DDR5</especificacio>
+                <especificacio nom="Velocitat">6000 MT/s</especificacio>
+                <especificacio nom="Latència">CL36</especificacio>
+                <especificacio nom="Garantia">De per vida limitada</especificacio>
+            </especificacions>
+            <preu>109.90</preu>
+            <valoracio escala="1-5">4.6</valoracio>
+            <estoc>20</estoc>
+            <data_incorporacio>06/05/2026</data_incorporacio>
+            <descripcio>Kit de memòria per millorar la resposta del sistema en jocs i aplicacions exigents. Cal verificar que la placa base admeti DDR5 i la velocitat indicada.</descripcio>
+        </producte>
+
+        <producte codi="BIT-SSD-010">
+            <nom>SSD NVMe 2 TB</nom>
+            <categories>
+                <categoria>Components</categoria>
+                <categoria>Emmagatzematge</categoria>
+            </categories>
+            <especificacions>
+                <especificacio nom="Marca">BitLab Components</especificacio>
+                <especificacio nom="Capacitat">2 TB</especificacio>
+                <especificacio nom="Format">M.2 2280</especificacio>
+                <especificacio nom="Interfície">PCIe 4.0 x4</especificacio>
+                <especificacio nom="Lectura seqüencial">Fins a 7000 MB/s</especificacio>
+                <especificacio nom="Garantia">5 anys</especificacio>
+            </especificacions>
+            <preu>159.90</preu>
+            <valoracio escala="1-5">4.8</valoracio>
+            <estoc>15</estoc>
+            <data_incorporacio>14/05/2026</data_incorporacio>
+            <descripcio>Unitat d'estat sòlid ràpida per instal·lar el sistema operatiu, les aplicacions i els jocs. És compatible amb plaques base que disposin d'una ranura M.2 PCIe 4.0.</descripcio>
+        </producte>
+
+        <producte codi="BIT-PSU-011">
+            <nom>Font d'alimentació modular 750 W</nom>
+            <categories>
+                <categoria>Components</categoria>
+                <categoria>Fonts d'alimentació</categoria>
+            </categories>
+            <especificacions>
+                <especificacio nom="Marca">BitLab Components</especificacio>
+                <especificacio nom="Potència">750 W</especificacio>
+                <especificacio nom="Certificació">80 PLUS Gold</especificacio>
+                <especificacio nom="Modularitat">Totalment modular</especificacio>
+                <especificacio nom="Format">ATX</especificacio>
+                <especificacio nom="Garantia">7 anys</especificacio>
+            </especificacions>
+            <preu>119.90</preu>
+            <valoracio escala="1-5">4.5</valoracio>
+            <estoc>8</estoc>
+            <data_incorporacio>21/05/2026</data_incorporacio>
+            <descripcio>Font eficient i modular per a un PC de sobretaula. La potència necessària depèn dels components instal·lats i s'ha de calcular abans de muntar l'equip.</descripcio>
+        </producte>
+
+        <producte codi="BIT-PER-012">
+            <nom>Pack Teclat &amp; Ratolí Sense Fils</nom>
+            <categories>
+                <categoria>Perifèrics</categoria>
+                <categoria>Teclats i ratolins</categoria>
+            </categories>
+            <especificacions>
+                <especificacio nom="Marca">BitLab</especificacio>
+                <especificacio nom="Connexió">Receptor USB de 2,4 GHz</especificacio>
+                <especificacio nom="Teclat">Distribució QWERTY en català i castellà</especificacio>
+                <especificacio nom="Ratolí">1600 DPI, òptic</especificacio>
+                <especificacio nom="Alimentació">Piles AA incloses</especificacio>
+                <especificacio nom="Garantia">2 anys</especificacio>
+            </especificacions>
+            <preu>39.90</preu>
+            <valoracio escala="1-5">4.3</valoracio>
+            <estoc>0</estoc>
+            <data_incorporacio>02/06/2026</data_incorporacio>
+            <descripcio>Pack sense fils amb teclat i ratolí per completar una estació de treball. El producte continua al catàleg encara que temporalment no hi hagi unitats disponibles.</descripcio>
+        </producte>
+    </cataleg>
+</botiga>

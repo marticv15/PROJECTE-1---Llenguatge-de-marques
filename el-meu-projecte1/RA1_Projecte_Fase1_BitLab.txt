@@ -1,0 +1,35 @@
+JUSTIFICACIÓ DE L'ESTRUCTURA DEL CATÀLEG XML DE BITLAB
+
+El catàleg té un únic element arrel, <botiga>, que conté la informació de BitLab
+i els productes. Les dades generals s'agrupen a <dades_botiga>, el contacte i
+les xarxes a <contacte>, les opcions de pagament a <metodes_pagament> i els
+articles a <cataleg>. Aquesta jerarquia separa la informació per funció i en
+facilita la lectura i l'ampliació.
+
+Les dades del catàleg —nom, moneda, preu, estoc, dates i descripcions— són
+elements perquè tenen contingut propi. Cada <producte> agrupa els seus camps.
+El codi és l'atribut @codi, ja que identifica de manera única cada fitxa en lloc
+de descriure'n el contingut. L'atribut @nom de <especificacio> assenyala el tipus
+de dada tècnica (per exemple, «Processador»); el seu valor és el contingut de
+l'element. L'atribut @escala de <valoracio> indica l'escala d'1 a 5.
+
+Les categories i especificacions es poden repetir perquè un producte pot
+pertànyer a diversos grups i tenir moltes característiques: un portàtil pot ser
+«Portàtils» i «Gaming», i indicar processador, memòria, gràfica i garantia. Els
+valors es representen amb
+elements <categoria> i <especificacio> repetits dins dels seus grups
+<categories> i <especificacions>, en lloc d'aplegar-los en un sol text. Així
+l'estructura s'adapta a portàtils, ordinadors de sobretaula, components i
+perifèrics, i permetrà definir-ne la cardinalitat al DTD de RA4.
+
+El catàleg conté dotze productes, més del mínim de deu. Els preus són en EUR,
+les valoracions van d'1 a 5, l'estoc és un enter igual o superior a zero i les
+dates segueixen DD/MM/AAAA. El producte esgotat es manté amb estoc zero. Les
+descripcions tenen una o dues frases. Al títol del pack de teclat i ratolí, «&»
+s'escriu amb l'entitat predefinida &amp; per respectar la sintaxi XML.
+
+XML és adequat perquè les etiquetes i la jerarquia fan les dades llegibles per
+persones i programes. L'estructura permet ampliar i processar el catàleg amb
+eines diferents. La codificació UTF-8 representa correctament els accents del
+català, i el comentari del fitxer explica la funció del codi identificador.
+L'estructura també servirà de base per validar el document amb un DTD.
