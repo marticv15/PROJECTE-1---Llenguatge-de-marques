@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE botiga[
+    <!ELEMENT botiga(dades_botiga,contacte,metodes_pagament,cataleg)>
+    <!ELEMENT dades_botiga(nom,ubicacio_seu,slogan)>
+    <!ELEMENT contacte(correu,xarxes_socials)>
+    <!ELEMENT xarxes_socials(xarxa+)>
 <!-- La botiga s'organitza en dades generals, contacte, pagaments i catàleg. -->
-<botiga>
+<botiga xml:lang="ca" moneda="EUR" darrera_actualització="14/10/2026">
     <!-- Aquesta secció identifica la botiga i indica la moneda i l'última actualització. -->
     <dades_botiga>
         <nom>BitLab</nom>
-        <llengua>Català</llengua>
         <ubicacio_seu>Botiga en línia amb seu a Barcelona, Catalunya</ubicacio_seu>
         <slogan>Tecnologia al teu ritme</slogan>
-        <moneda>EUR</moneda>
-        <darrera_actualitzacio>11/10/2026</darrera_actualitzacio>
     </dades_botiga>
 
     <!-- Aquí es mostren les vies de contacte i els perfils socials de BitLab. -->
