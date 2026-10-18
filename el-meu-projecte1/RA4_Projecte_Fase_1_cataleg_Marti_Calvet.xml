@@ -49,7 +49,7 @@
 <!ELEMENT data_incorporacio (#PCDATA)>
 <!ELEMENT descripcio (#PCDATA)>
 
-<!-- Entitats pròpies: text reutilitzable que s'expandeix en llegir el document XML. -->
+<!-- Entitats pròpies: -->
 <!ENTITY marcaBitLab "BitLab">
 <!ENTITY simbolEuro "€">
 ]>
