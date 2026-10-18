@@ -195,7 +195,7 @@
             <descripcio>PC compacte per a tasques d'oficina, navegació i gestió de documents. Ocupa poc espai i es pot ampliar quan les necessitats canviïn.</descripcio>
         </producte>
 
-        <producte codi="BIT-CPU-006" relacionats="BIT-MB-008 BIT-PSU-011">
+        <producte codi="BIT-CPU-006" relacionats="BIT-PSU-011">
             <nom>Intel Core i7-14700K - Processador</nom>
             <categories>
                 <categoria>Components</categoria>
